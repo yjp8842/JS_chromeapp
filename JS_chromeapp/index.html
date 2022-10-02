@@ -8,27 +8,88 @@
   <title>Momentum App</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<body>
-  <div id="background" class="bgImg text-center text-light">
-    <form id="login-form" class="hidden">
-      <input required maxlength="15" type="text" placeholder="What is your name?"/>
-      <!-- <input type="submit" value="Log In"/> -->
-    </form>
-    <h1 id="clock" class="main-font fw-bold">00:00:00</h1>
-    <h1 id="greeting" class="hidden main-font fw-bold"></h1>
-    <form id="todo-form">
-      <input class="fonts" type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote" class="sub-font">
-      <span></span>
-      <span></span>
+<body id="background">
+  <header class="bgImg text-light">
+    <h1 id="greeting" class="hidden display-1 text-center main-font fw-bold greet-margin"></h1>
+    <div class="name-input text-center">
+      <form id="login-form" class="hidden display-6">
+        <input required maxlength="15" type="text" placeholder="What is your name?" class="text-center underline" style="border: underline; background: transparent;"/>
+        <!-- <input type="submit" value="Log In"/> -->
+      </form>
     </div>
-    <div id="weather" class="sub-font">
-      <span></span>
-      <span></span>
+    <div class="d-flex mb-3">
+      <h3 id="clock" class="main-font fw-bold me-auto p-2 ms-5">00:00:00</h3>
+      <div id="weather" class="main-font fw-bold h3 ms-auto p-2 me-5">
+        <span></span>
+        <span></span>
+      </div>
     </div>
-  </div>
+    <!-- inbox -->
+    <div class="border border-4 rounded box-size bg-light bg-opacity-75">
+      <div class="d-flex justify-content-center">
+        <!-- todo-list -->
+        <div class="inbox-size rounded">
+          <h3 class="fw-bolder text-center mt-2">💡TODO LIST</h1>
+          <form id="todo-form" class="text-center mt-4">
+            <input id="todo-form" class="text-center fonts inbox-input" type="text" required />
+          </form>
+          <div class="ms-3 mt-2">
+            <div id="todo-list" class="h4 mt-4"></div>
+          </div>
+        </div>
+        <!-- todo-list end -->
+        <!-- memory start -->
+        <div class="inbox-size rounded d-flex flex-column align-items-center">
+          <h3 class="fw-bolder text-center mt-2">🎞MEMORIES</h1>
+          <img src="img/memory.jpg" class="memory-size mt-4">
+          <input type="text" class="story-input mt-3">
+        </div>
+        <!-- memory end -->
+        <!-- calendar start -->
+        <div class="my-calendar clearfix rounded">
+          <div class="clicked-date">
+            <div class="cal-day"></div>
+            <div class="cal-date"></div>
+          </div>
+          <div class="calendar-box">
+            <div class="ctr-box clearfix">
+              <button type="button" title="prev" class="btn-cal prev">
+              </button>
+              <span class="cal-month"></span>
+              <span class="cal-year"></span>
+              <button type="button" title="next" class="btn-cal next">
+              </button>
+            </div>
+            <table class="cal-table">
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                </tr>
+              </thead>
+              <tbody class="cal-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- calendar end -->
+      </div>
+      <div class="bookmark-size rounded">
+        <h5 class="text-dark fw-bold">BOOKMARKS</h5>
+      </div>
+      <div class="text-center quote-size rounded">
+        <h6 class="sub-font text-dark">Today Quote's</h6>
+        <div id="quote" class="sub-font text-dark h6">
+          <samp></samp>
+          <samp></samp>
+        </div>
+      </div>
+    </div>
+  </header>
   <script src="js/keys.js"></script>
   <script src="js/greeting.js"></script>
   <script src="js/clock.js"></script>
@@ -36,6 +97,7 @@
   <script src="js/background.js"></script>
   <script src="js/todo.js"></script>
   <script src="js/weather.js"></script>
+  <script src="js/calendar.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
