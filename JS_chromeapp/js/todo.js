@@ -32,9 +32,9 @@ function paintToDo(newTodo) {
   button.addEventListener("click", deleteToDo);
   li.appendChild(span);
   li.appendChild(button);
-  // li.style.display="block";
-  // li.style.justifyContent="center";
-  // li.style.alignItems="center";
+  li.style.display="block";
+  li.style.justifyContent="center";
+  li.style.alignItems="center";
   toDoList.appendChild(li);
 }
 
