@@ -20,18 +20,25 @@ function deleteToDo(event) {
 function paintToDo(newTodo) {
   const li = document.createElement("li");
   li.id = newTodo.id;
+  // const p = document.createElement("p");
+  // p.innerText = "♡";
   const span = document.createElement("span");
-  span.innerText = newTodo.text;
+  span.innerText = "♥ " + newTodo.text;
   span.style.fontSize="larger";
   span.style.fontWeight="semibold";
   const button = document.createElement("button");
   button.innerText = "DONE";
   button.style.border="none";
   // button.style.marginTop="30px";
-  // button.style.marginLeft="80px";
+  // button.style.marginLeft="100px";
   button.addEventListener("click", deleteToDo);
   li.appendChild(span);
   li.appendChild(button);
+  li.style.marginTop="30px";
+  li.style.marginLeft="25px";
+  li.style.marginRight="40px";
+  li.style.display="flex";
+  li.style.justifyContent="space-between";
   // li.style.display="block";
   // li.style.justifyContent="center";
   // li.style.alignItems="center";

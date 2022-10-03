@@ -15,32 +15,45 @@
 }
 
 .bgImg {
-  height: 1100px;
-  width: 1900px;
+  /* height: 1100px;
+  width: 1900px; */
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
+  /* width: 100%; */
+  height: 1230px;
 }
 
 .box-size {
   /* margin-top: 30px; */
   margin-left: 50px;
-  height: 850px;
+  height: 950px;
   width: 1800px;
 }
 
-.inbox-size {
+.inbox-size1 {
   margin-top: 50px;
   margin-left: 20px;
 	margin-right: 40px;
-  height: 500px;
+  height: 700px;
+  width: 400px;
+	border: 8px solid #b7d3e8;
+	background-color: #b7d3e8;
+}
+
+.inbox-size2 {
+  margin-top: 50px;
+  margin-left: 20px;
+	margin-right: 40px;
+  height: 400px;
   width: 400px;
 	border: 8px solid #b7d3e8;
 	background-color: #b7d3e8;
 }
 
 .quote-size {
-	margin-top: 30px;
-	margin-left: 105px;
-	height: 60px;
-	width: 1600px;
+	margin-top: 50px;
+	height: 200px;
+	width: 700px;
 	background-color: aliceblue;
 }
 
@@ -52,9 +65,48 @@
 	background-color: aliceblue;
 }
 
+.bookmark-font {
+  height: 50px;
+  width: 120px;
+  margin-top: 18px;
+  margin-left: 20px;
+  font-size: larger;
+}
+
+.a-font {
+  height: 70px;
+  width: 140px;
+}
+
+.memory-box {
+  height: 300px;
+  width: 400px;
+  background-color: #b7d3e8;
+}
+
 .memory-size {
+  margin-top: 20px;
   height: 200px;
   width: 300px;
+}
+
+.youtube-size {
+  height: 190px;
+  width: 350px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.youtube-box {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 280px;
+  width: 400px;
+  background-color: #b7d3e8;
+}
+
+.quote-padding {
+  padding: 40px;
 }
 
 /* calendar */
@@ -78,7 +130,7 @@
   /* ======== Calendar ======== */
 .my-calendar {
   width: 700px;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 20px 20px 10px;
   text-align: center;
   font-weight: 800;
