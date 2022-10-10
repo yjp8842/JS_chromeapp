@@ -44,7 +44,6 @@ const PLAYLIST_ID = [
     name: 'OneRepublic - I Aint Worried',
     videoID: '42oK5vjD2UU',
   },
- 
 ];
 
 const playList = document.querySelector("#playList");

@@ -10,7 +10,7 @@
 </head>
 <body id="background">
   <header class="text-light bgImg">
-    <h1 id="greeting" class="hidden display-1 text-center main-font fw-bold greet-margin"></h1>
+    <h1 id="greeting" class="hidden text-center main-font fw-bold greet-margin"></h1>
     <div class="name-input text-center">
       <form id="login-form" class="hidden display-6">
         <input required maxlength="15" type="text" placeholder="What is your name?" class="text-center underline" style="border: underline; background: transparent;"/>
@@ -18,9 +18,9 @@
       </form>
     </div>
     <!-- clock & weather start -->
-    <div class="d-flex mb-3">
-      <h3 id="clock" class="main-font fw-bold me-auto p-2 ms-5">00:00</h3>
-      <div id="weather" class="main-font fw-bold h3 ms-auto p-2 me-5">
+    <div class="d-flex mb-3 ms-3 me-5">
+      <h3 id="clock" class="main-font fw-bold me-auto ps-5 ms-5">00:00</h3>
+      <div id="weather" class="main-font fw-bold h4 ms-auto pe-5 me-5">
         <span></span>
         <span></span>
       </div>
@@ -29,17 +29,30 @@
     <!-- inbox -->
     <div class="border border-4 rounded box-size bg-light bg-opacity-75">
       <div class="d-flex justify-content-center">
-        <!-- todo-list -->
-        <div class="inbox-size1 rounded">
-          <h3 class="fw-bolder text-center mt-2">💡 TODO LIST</h1>
-          <form id="todo-form" class="text-center mt-4">
-            <input id="todo-form" class="text-center fonts inbox-input" type="text" required />
-          </form>
-          <div class="ms-3 mt-2">
-            <div id="todo-list" class="h4 mt-4"></div>
+        <div>
+          <!-- todo-list -->
+          <div class="inbox-size1 rounded">
+            <h3 class="fw-bolder text-center mt-2">💡 TODO LIST</h1>
+            <form id="todo-form" class="text-center mt-4">
+              <input id="todo-form" class="text-center fonts inbox-input" type="text" required />
+            </form>
+            <div class="ms-3 mt-2">
+              <div id="todo-list" class="h4 mt-4"></div>
+            </div>
           </div>
+          <!-- todo-list end -->
+          <!-- quote start -->
+          <div class="text-center quote-size rounded">
+            <div class="quote-padding">
+              <h4 class="sub-font text-dark">Today Quote's</h4>
+              <div id="quote" class="text-dark mt-3">
+                <samp class="sub-font h5"></samp><br>
+                <samp class="sub-font h5"></samp>
+              </div>
+            </div>
+          </div>
+          <!-- quote end -->
         </div>
-        <!-- todo-list end -->
         <!-- memory start -->
         <div>
           <div class="inbox-size2 rounded d-flex flex-column align-items-center">
@@ -69,23 +82,17 @@
           <!-- memory end -->
           <!-- youtube start -->
           <div class="youtube-box rounded p-3">
-            <h4 class="text-center fw-bolder">🎧 MUSIC</h4>
+            <!-- <h4 class="text-center fw-bolder">🎧 MUSIC</h4>
+            <div id="player" class="youtube-size"></div> -->
             <div id="player" class="youtube-size"></div>
+            <button id="play">Play</button>  
+            <button id="pause">Pause</button> 
+            <button id="next" >Next</button> 
+            <span id="playList">Click the Play button</span>
           </div>
           <!-- youtube end -->
         </div>
         <div>
-          <!-- quote start -->
-          <div class="text-center quote-size rounded">
-            <div class="quote-padding">
-              <h4 class="sub-font text-dark">Today Quote's</h4>
-              <div id="quote" class="text-dark mt-3">
-                <samp class="sub-font h5"></samp><br>
-                <samp class="sub-font h5"></samp>
-              </div>
-            </div>
-          </div>
-          <!-- quote end -->
           <!-- calendar start -->
           <div class="my-calendar clearfix rounded">
             <div class="clicked-date">
